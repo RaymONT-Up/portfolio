@@ -1,0 +1,26 @@
+.project-about {
+  &__inner {
+    margin: 100px 0;
+  }
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  &__title--small {
+    margin-bottom: 15px;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 6px;
+  }
+  &__paragraph {
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 2px;
+  }
+}

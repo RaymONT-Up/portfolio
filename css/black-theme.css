@@ -1,0 +1,7 @@
+body {
+  color: #faf4e6;
+  background-color: #222222;
+}
+.header__theme {
+  background-image: url(../images/icon/white-theme.svg);
+}

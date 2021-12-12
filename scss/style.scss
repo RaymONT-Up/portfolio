@@ -1,0 +1,21 @@
+@import "vars";
+@import "reset";
+@import "global";
+
+// BEM Blocks
+// landing
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/skills.scss";
+@import "blocks/projects.scss";
+@import "blocks/about.scss";
+
+// about project
+// header
+@import "blocks/project-hero.scss";
+@import "blocks/project-about.scss";
+@import "blocks/contact.scss";
+
+// portfolio sort
+// header
+@import "blocks/portfolio.scss";

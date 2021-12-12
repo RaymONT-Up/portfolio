@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: background-color, color, 0.45s;
+}
+.body.active {
+  overflow-y: hidden;
+}
+// cursor
+a,
+button {
+  cursor: url(../images/icon/cursor-pointer.svg) 0 0, pointer;
+}
+body {
+  cursor: url(../images/icon/cursor.svg) 0 0, auto;
+
+  // scroll
+  &::-webkit-scrollbar {
+    z-index: 10;
+    width: 11px;
+    height: 0;
+    background: #3c3b3a;
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #181818;
+  }
+}
+.body.hidden {
+  &::-webkit-scrollbar {
+    position: relative;
+    z-index: 0;
+    width: 0;
+    background: transparent;
+    opacity: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: transparent;
+    opacity: 0;
+  }
+}
+// Включает ползунок на той странице где нужен скрол, проще говоря на project этого класса нету и через js нету размеров скрола
+
+.body.bodyNoScroll {
+  &::-webkit-scrollbar {
+    width: 11px;
+    height: 0;
+
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+  }
+}
+// excretion text
+::selection {
+  background: #181818; /* Safari */
+}
+::-moz-selection {
+  background: #181818; /* Firefox */
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 120px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 70px;
+    line-height: 100px;
+  }
+}
+@media (max-width: 580px) {
+  .title {
+    font-size: 60px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 50px;
+    line-height: 100px;
+  }
+}
